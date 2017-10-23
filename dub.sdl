@@ -1,0 +1,7 @@
+name "d-json"
+authors "Gian Merlino"
+copyright "Copyright 2011-2016 Gian Merlino"
+license "Apache-2.0"
+
+targetType "sourceLibrary"
+sourceFiles "jsonx"
