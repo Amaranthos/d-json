@@ -1,16 +1,9 @@
-.dub
-docs.json
-__dummy.html
 bench
 test
 test.txt
 main
 *.d.deps
 *.o
-*.obj
-__test__*__
-*.sublime-workspace
 *.lst
 trace.def
 trace.log
-*.lib
