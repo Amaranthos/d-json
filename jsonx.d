@@ -411,7 +411,7 @@ T[] jsonDecode_impl(A : T[], T, R)(ref R input) if(isInputCharRange!R && !isSome
 }
 
 /* Decode JSON number -> D number */
-T jsonDecode_impl(T, R)(ref R input) if(isInputCharRange!R && isNumeric!T && !is(T == enum)) {
+T jsonDecode_impl(T, R)(ref R input) if(isInputCharRange!R && isNumeric!T && !is(T == enum) && !is(T == bool)) {
     /* Attempt decoding of JSON strings into D numbers
      * by ignoring surrounding quote marks if present */
     auto first = nextChar(input);
